@@ -26,6 +26,7 @@ jobs:
           action: "upload"
           app_location: "./src" 
           api_location: ""
+          app_build_command: "npm run docs:build"
           output_location: "."   
   close_pull_request_job: 
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
